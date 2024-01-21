@@ -1,0 +1,35 @@
+.container{
+    background-color: antiquewhite;
+    display: grid;
+    gap: 20px 20px;
+    height: 600px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px auto 100px;
+    grid-template-areas: 
+    'h h h h h h h h h h h h'
+    'l l l m m m m m m r r r'
+    'f f f f f f f f f f f f';
+
+}
+.items{
+    background-color: indianred;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+#header{
+    grid-area: h;
+}
+#left-bar{
+    grid-area: l;
+}
+#main-content{
+    grid-area: m;
+}
+#right-bar{
+    grid-area: r;
+}
+#footer{
+     grid-area: f;
+}
